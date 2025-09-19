@@ -2,7 +2,6 @@
 import './Bottle.css'
 
 const Bottle = ({bottle,heandleAddToCard}) => {
-    console.log(bottle)
     const {name,img,price} =bottle
     return (
         <div className='bottle'>
