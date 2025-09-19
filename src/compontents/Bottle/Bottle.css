@@ -1,0 +1,10 @@
+.bottle{
+    border: 2px solid rebeccapurple;
+    padding: 10px;
+    border-radius: 15px;
+}
+.bottle img{
+    width: 200px;
+    height: 150px;
+}
+

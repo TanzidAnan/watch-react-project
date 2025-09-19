@@ -1,14 +1,14 @@
 
 import './App.css'
-import Watch from './compontent/Watch/Watch'
-import Watchs from './compontent/Watchs/Watchs'
+import Bottles from './compontents/Bottles/Bottles'
+import Header from './compontents/Header/Header'
 
 function App() {
 
   return (
     <>
-      <h1>react project</h1>
-      <Watchs></Watchs>
+    <Header></Header>
+    <Bottles></Bottles>
     </>
   )
 }
