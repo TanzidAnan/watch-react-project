@@ -18,7 +18,7 @@ const SingleProduct = ({ product }) => {
                     </h2>
                     <p>{description}</p>
                     <div className="card-actions justify-between mt-4 align-middle">
-                        <div className="badge badge-outline">Price: ${price}</div>
+                        <div className="badge badge-outline text-lg font-bold text-green-600 py-3">Price: ${price}</div>
                         <div className="btn bg-green-200">Add To Cart</div>
                     </div>
                 </div>
