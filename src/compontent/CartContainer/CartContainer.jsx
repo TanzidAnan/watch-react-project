@@ -3,7 +3,7 @@ import './CartContainer.css'
 import Cart from '../Cart/Cart';
 import About from '../About/About';
 
-const CartContainer = ({handleIsActiveState,isActive,selectedProducts}) => {
+const CartContainer = ({handleIsActiveState,isActive,selectedProducts,hendleRemoveItem}) => {
     return (
         <div>
             <h1>cart container</h1>
@@ -17,7 +17,7 @@ const CartContainer = ({handleIsActiveState,isActive,selectedProducts}) => {
             </div>
 
             <div>
-                {isActive.cart?<Cart selectedProducts={selectedProducts}></Cart> :<About></About>}
+                {isActive.cart?<Cart selectedProducts={selectedProducts} hendleRemoveItem={hendleRemoveItem} ></Cart> :<About></About>}
             </div>
 
         </div>

@@ -18,29 +18,33 @@ function App() {
         status: 'cart'
       })
     }
-    else{
-     setIsActive({
+    else {
+      setIsActive({
         cart: false,
         status: 'about'
       })
+    }
   }
-  }
-  
-  const [selectedProducts,setSelectedProducts]=useState([])
 
-  const handkeSelectedProduct =(product) =>{
+  const [selectedProducts, setSelectedProducts] = useState([])
+
+  const handkeSelectedProduct = (product) => {
     console.log(product);
-    const isExist =selectedProducts.find((p) =>p.id ===product.id);
-    if(isExist){
+    const isExist = selectedProducts.find((p) => p.id === product.id);
+    if (isExist) {
       alert('ar add kora jabe na')
     }
-    else{
-      const newProduct =[...selectedProducts,product];
-    setSelectedProducts(newProduct)
+    else {
+      const newProduct = [...selectedProducts, product];
+      setSelectedProducts(newProduct)
     }
-    
+
   }
-  console.log(selectedProducts)
+
+  const hendleRemoveItem = (id) => {
+    const remaingProduct = selectedProducts.filter(p => p.id !== id);
+    setSelectedProducts(remaingProduct)
+  }
 
   return (
     <>
@@ -48,8 +52,12 @@ function App() {
       <Header selectedProducts={selectedProducts}></Header>
       {/* Header section end */}
       <div className='flex w-10/12 mx-auto'>
-        <AllProduct handkeSelectedProduct={handkeSelectedProduct}></AllProduct>
-        <CartContainer handleIsActiveState={handleIsActiveState} isActive={isActive} selectedProducts={selectedProducts}></CartContainer>
+        <div className='w-7/12'>
+          <AllProduct handkeSelectedProduct={handkeSelectedProduct}></AllProduct>
+        </div>
+        <div className='w-5/12'>
+          <CartContainer handleIsActiveState={handleIsActiveState} isActive={isActive} selectedProducts={selectedProducts} hendleRemoveItem={hendleRemoveItem}></CartContainer>
+        </div>
       </div>
     </>
   )

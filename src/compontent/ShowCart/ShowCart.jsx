@@ -1,16 +1,16 @@
-import React from 'react';
 
-const ShowCart = ({ product }) => {
+const ShowCart = ({ product,hendleRemoveItem }) => {
     return (
         <div className=''>
            <div className="overflow-x-auto">
   <table className="table">
     <tbody>
-      <tr>
+      <tr className="flex justify-between">
+        <td><img className="w-[100px] rounded" src={product.image} alt="" /></td>
         <td>{product.name}</td>
         <td>${product.price}</td>
         <td>
-          <button className="btn btn-sm">Remove</button>
+          <button onClick={() =>hendleRemoveItem(product.id)} className="btn btn-sm btn-error">Remove</button>
         </td>
       </tr>
     </tbody>
