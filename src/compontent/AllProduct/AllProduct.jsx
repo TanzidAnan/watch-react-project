@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './AllProduct.css'
+import SingleProduct from '../SingleProduct/SingleProduct';
 
 const AllProduct = () => {
     const [products,setProducts] =useState([]);
@@ -11,6 +12,9 @@ const AllProduct = () => {
     return (
         <div>
             <h1>All product :{products.length}</h1>
+            <div>
+                {products.map((product) =><SingleProduct key={product.id} product={product} ></SingleProduct>)}
+            </div>
         </div>
     );
 };
