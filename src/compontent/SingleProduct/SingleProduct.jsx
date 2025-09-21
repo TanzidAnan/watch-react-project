@@ -1,5 +1,5 @@
 
-const SingleProduct = ({ product }) => {
+const SingleProduct = ({ product,handkeSelectedProduct }) => {
     // console.log(product);
     const { name, price, color, water_resistant, image, description, isFeatured } = product;
     return (
@@ -19,7 +19,7 @@ const SingleProduct = ({ product }) => {
                     <p>{description}</p>
                     <div className="card-actions justify-between mt-4 align-middle">
                         <div className="badge badge-outline text-lg font-bold text-green-600 py-3">Price: ${price}</div>
-                        <div className="btn bg-green-200">Add To Cart</div>
+                        <div onClick={() =>handkeSelectedProduct(product)} className="btn bg-green-200">Add To Cart</div>
                     </div>
                 </div>
             </div>

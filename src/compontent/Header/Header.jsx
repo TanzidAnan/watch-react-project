@@ -15,6 +15,8 @@ const Header = () => {
                             <li><a>Home</a></li>
                             <li><a>About</a></li>
                             <li><a>Product</a></li>
+                            <li><a>Cart <span>1</span></a></li>
+                            <li><a>$ <span>500</span></a></li>
                         </ul>
                     </div>
                     <a className="btn btn-ghost text-xl">daisyUI</a>
@@ -24,6 +26,8 @@ const Header = () => {
                         <li><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Product</a></li>
+                        <li><a>Cart <span>1</span></a></li>
+                        <li><a>$ <span>500</span></a></li>
                     </ul>
                 </div>
                 <div className="navbar-end">

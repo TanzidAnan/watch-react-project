@@ -26,8 +26,11 @@ function App() {
   }
   }
   
+  const [selectedProducts,setSelectedProducts]=useState([])
 
-  console.log(isActive)
+  const handkeSelectedProduct =(product) =>{
+    console.log(product)
+  }
 
   return (
     <>
@@ -35,7 +38,7 @@ function App() {
       <Header></Header>
       {/* Header section end */}
       <div className='flex w-10/12 mx-auto'>
-        <AllProduct></AllProduct>
+        <AllProduct handkeSelectedProduct={handkeSelectedProduct}></AllProduct>
         <CartContainer handleIsActiveState={handleIsActiveState} isActive={isActive}></CartContainer>
       </div>
     </>
