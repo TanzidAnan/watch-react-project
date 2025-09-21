@@ -29,13 +29,15 @@ function App() {
   const [selectedProducts,setSelectedProducts]=useState([])
 
   const handkeSelectedProduct =(product) =>{
-    console.log(product)
+    console.log(product);
+    const newProduct =[...selectedProducts,product];
+    setSelectedProducts(newProduct)
   }
 
   return (
     <>
       {/* Header section state */}
-      <Header></Header>
+      <Header selectedProducts={selectedProducts}></Header>
       {/* Header section end */}
       <div className='flex w-10/12 mx-auto'>
         <AllProduct handkeSelectedProduct={handkeSelectedProduct}></AllProduct>
