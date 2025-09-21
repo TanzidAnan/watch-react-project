@@ -43,6 +43,7 @@ function App() {
   }
 
   const hendleRemoveItem = (id) => {
+    hendleDeletePrice(id)
     const remaingProduct = selectedProducts.filter(p => p.id !== id);
     setSelectedProducts(remaingProduct)
   }
@@ -51,6 +52,11 @@ function App() {
 
   const handleIncrashPrice =(pr) =>{
     setPrice(price+pr)
+  }
+
+  const hendleDeletePrice=(id) =>{
+    const product =selectedProducts.find((p) =>p.id ==id);
+    setPrice(price-product.price)
   }
 
 
