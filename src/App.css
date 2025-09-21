@@ -1,1 +1,6 @@
 @plugin "daisyui";
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}

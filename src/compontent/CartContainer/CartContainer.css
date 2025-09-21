@@ -1,0 +1,13 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.active{
+    background-color: blue;
+    color: white;
+}
+.btns{
+    padding: 15px;
+}
