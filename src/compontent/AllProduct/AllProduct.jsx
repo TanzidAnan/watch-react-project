@@ -11,8 +11,8 @@ const AllProduct = () => {
     })
     return (
         <div>
-            <h1>All product :{products.length}</h1>
-            <div>
+            <h1 className='text-2xl '>All product :{products.length}</h1>
+            <div className='grid grid-cols-3 gap-[25px]'>
                 {products.map((product) =><SingleProduct key={product.id} product={product} ></SingleProduct>)}
             </div>
         </div>

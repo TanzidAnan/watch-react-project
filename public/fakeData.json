@@ -8,7 +8,8 @@
     "type": "Automatic",
     "water_resistant": "300m",
     "image": "https://www.bobswatches.com/rolex-blog/wp-content/uploads/2016/02/Submariner-white-gold-blue-116619-1024x576.jpg",
-    "description": "Luxury diving watch with stainless steel case and ceramic bezel."
+    "description": "Luxury diving watch with stainless steel case and ceramic bezel.",
+    "isFeatured": true
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "type": "Digital",
     "water_resistant": "200m",
     "image": "https://revolutionwatch.com/wp-content/uploads/2019/08/Casio-GA-2100-1AJF_SMIT7580_20190816.jpg",
-    "description": "Durable shock-resistant sports watch with digital display."
+    "description": "Durable shock-resistant sports watch with digital display.",
+    "isFeatured": false
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "type": "Smartwatch",
     "water_resistant": "50m",
     "image": "https://hnsgsfp.imgix.net/4/images/detailed/80/Apple_Watch_SE_GPS_40mm_Space_Gray_Aluminum_Anthracite_Black_Nike_Sport_Band_PDP_Image_Position-1__SG_ngr7-x1.jpg",
-    "description": "Smartwatch with fitness tracking, heart rate monitoring, and notifications."
+    "description": "Smartwatch with fitness tracking, heart rate monitoring, and notifications.",
+    "isFeatured": true
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "type": "Automatic",
     "water_resistant": "100m",
     "image": "https://www.seikowatches.com/au-en/-/media/Images/GlobalEn/Seiko/Home/products/5sports/srpl33/SRPL33K1_FV.png?mh=1125&mw=2000&hash=9E4A9A2D99415F4D6BAD626534689E13",
-    "description": "Affordable automatic watch with stainless steel bracelet."
+    "description": "Affordable automatic watch with stainless steel bracelet.",
+    "isFeatured": false
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "type": "Automatic",
     "water_resistant": "300m",
     "image": "https://avatars.mds.yandex.net/i?id=6146016fbcdafef858db7c640cd67e891a14f1f4-12940477-images-thumbs&n=13",
-    "description": "Professional diving watch with helium escape valve."
+    "description": "Professional diving watch with helium escape valve.",
+    "isFeatured": true
   },
   {
     "id": 6,
@@ -63,7 +68,8 @@
     "type": "Smartwatch",
     "water_resistant": "30m",
     "image": "https://www.financialexpress.com/wp-content/uploads/2022/07/Fossil-Gen-6-hybrid.jpg",
-    "description": "Stylish smartwatch with WearOS and customizable watch faces."
+    "description": "Stylish smartwatch with WearOS and customizable watch faces.",
+    "isFeatured": false
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
     "type": "Automatic",
     "water_resistant": "100m",
     "image": "https://image.bestwatchesmaker.com/Tag-Heuer-1140-1.jpg",
-    "description": "Luxury chronograph with sapphire crystal and Swiss movement."
+    "description": "Luxury chronograph with sapphire crystal and Swiss movement.",
+    "isFeatured": true
   },
   {
     "id": 8,
@@ -85,7 +92,8 @@
     "type": "Smartwatch",
     "water_resistant": "50m",
     "image": "https://static1.anpoimages.com/wordpress/wp-content/uploads/2023/07/galaxy-watch-6-classic-white-watch-faces.jpg",
-    "description": "Smartwatch with AMOLED display and advanced fitness tracking."
+    "description": "Smartwatch with AMOLED display and advanced fitness tracking.",
+    "isFeatured": false
   },
   {
     "id": 9,
@@ -96,7 +104,8 @@
     "type": "Automatic",
     "water_resistant": "100m",
     "image": "https://i.ytimg.com/vi/_hSecFizsss/hq720.jpg",
-    "description": "Classic stainless steel automatic watch with 80-hour power reserve."
+    "description": "Classic stainless steel automatic watch with 80-hour power reserve.",
+    "isFeatured": true
   },
   {
     "id": 10,
@@ -107,7 +116,8 @@
     "type": "Smartwatch",
     "water_resistant": "50m",
     "image": "https://avatars.mds.yandex.net/i?id=3fdb9bd087a76bf6762b96260bf5680c0dd4ad86-11497947-images-thumbs&n=13",
-    "description": "GPS running smartwatch with advanced performance metrics."
+    "description": "GPS running smartwatch with advanced performance metrics.",
+    "isFeatured": false
   },
   {
     "id": 11,
@@ -118,7 +128,8 @@
     "type": "Solar",
     "water_resistant": "100m",
     "image": "https://uhrforum.de/data/attachments/3269/3269054-33c35bae95f8e6f5d574a3a707246cd6.jpg",
-    "description": "Eco-drive solar-powered watch with canvas strap."
+    "description": "Eco-drive solar-powered watch with canvas strap.",
+    "isFeatured": false
   },
   {
     "id": 12,
@@ -129,6 +140,7 @@
     "type": "Automatic",
     "water_resistant": "100m",
     "image": "https://cdn.shopify.com/s/files/1/2623/3408/files/Tissot_blog_banner_2_1024x1024.jpg",
-    "description": "Military-inspired automatic watch with rugged design."
+    "description": "Military-inspired automatic watch with rugged design.",
+    "isFeatured": true
   }
 ]
