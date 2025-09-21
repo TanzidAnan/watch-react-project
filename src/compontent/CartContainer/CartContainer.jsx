@@ -1,5 +1,7 @@
 import React from 'react';
 import './CartContainer.css'
+import Cart from '../Cart/Cart';
+import About from '../About/About';
 
 const CartContainer = ({handleIsActiveState,isActive}) => {
     console.log(isActive)
@@ -14,6 +16,11 @@ const CartContainer = ({handleIsActiveState,isActive}) => {
                     <button onClick={() =>handleIsActiveState('about')} className={`${isActive.cart?'btn ':'btn active'}`}>About</button>
                 </div>
             </div>
+
+            <div>
+                {isActive.cart?<Cart></Cart> :<About></About>}
+            </div>
+
         </div>
     );
 };
