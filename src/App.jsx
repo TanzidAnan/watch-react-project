@@ -36,7 +36,7 @@ function App() {
       {/* Header section end */}
       <div className='flex w-10/12 mx-auto'>
         <AllProduct></AllProduct>
-        <CartContainer handleIsActiveState={handleIsActiveState}></CartContainer>
+        <CartContainer handleIsActiveState={handleIsActiveState} isActive={isActive}></CartContainer>
       </div>
     </>
   )
