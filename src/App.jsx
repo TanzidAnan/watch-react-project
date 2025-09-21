@@ -30,9 +30,17 @@ function App() {
 
   const handkeSelectedProduct =(product) =>{
     console.log(product);
-    const newProduct =[...selectedProducts,product];
+    const isExist =selectedProducts.find((p) =>p.id ===product.id);
+    if(isExist){
+      alert('ar add kora jabe na')
+    }
+    else{
+      const newProduct =[...selectedProducts,product];
     setSelectedProducts(newProduct)
+    }
+    
   }
+  console.log(selectedProducts)
 
   return (
     <>
@@ -41,7 +49,7 @@ function App() {
       {/* Header section end */}
       <div className='flex w-10/12 mx-auto'>
         <AllProduct handkeSelectedProduct={handkeSelectedProduct}></AllProduct>
-        <CartContainer handleIsActiveState={handleIsActiveState} isActive={isActive}></CartContainer>
+        <CartContainer handleIsActiveState={handleIsActiveState} isActive={isActive} selectedProducts={selectedProducts}></CartContainer>
       </div>
     </>
   )
