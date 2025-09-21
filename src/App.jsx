@@ -35,6 +35,7 @@ function App() {
       alert('ar add kora jabe na')
     }
     else {
+      handleIncrashPrice(product.price)
       const newProduct = [...selectedProducts, product];
       setSelectedProducts(newProduct)
     }
@@ -46,10 +47,17 @@ function App() {
     setSelectedProducts(remaingProduct)
   }
 
+  const [price,setPrice] =useState(500);
+
+  const handleIncrashPrice =(pr) =>{
+    setPrice(price+pr)
+  }
+
+
   return (
     <>
       {/* Header section state */}
-      <Header selectedProducts={selectedProducts}></Header>
+      <Header selectedProducts={selectedProducts} price={price}></Header>
       {/* Header section end */}
       <div className='flex w-10/12 mx-auto'>
         <div className='w-7/12'>

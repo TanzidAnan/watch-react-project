@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = ({selectedProducts}) => {
+const Header = ({selectedProducts,price}) => {
     return (
         <div className='w-10/12 mx-auto'>
             <div className="navbar bg-base-100 shadow-sm">
@@ -16,7 +16,7 @@ const Header = ({selectedProducts}) => {
                             <li><a>About</a></li>
                             <li><a>Product</a></li>
                             <li><a>Cart <span>{selectedProducts.length}</span></a></li>
-                            <li><a>$<span>500</span></a></li>
+                            <li><a>$<span>{price}</span></a></li>
                         </ul>
                     </div>
                     <a className="btn btn-ghost text-xl">daisyUI</a>
@@ -27,7 +27,7 @@ const Header = ({selectedProducts}) => {
                         <li><a>About</a></li>
                         <li><a>Product</a></li>
                        <li><a>Cart <span className=' font-bold'>{selectedProducts.length}</span></a></li>
-                        <li><a>$<span>500</span></a></li>
+                        <li><a>$<span>{price}</span></a></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
